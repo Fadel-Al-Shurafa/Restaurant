@@ -1,0 +1,48 @@
+
+/* big tablets to 1200px  */
+@media screen and (max-width:1200px ) {
+    .hero-text-box {
+    padding : 0 2%;
+    width: 100%;
+    }
+    .row {
+        padding: 0 2%;
+    }
+    
+    
+}
+
+
+
+
+
+/* small tablets to big tablets: from 767px to 1023px */
+@media screen and (max-width:1023px ) {
+    body {font-size: 16px;}
+    selection {padding: 60px 0 ;}  
+}
+.app-screen {
+    width: 45%;
+}
+.works-steps div {
+
+    padding: 12px 1px 9px 1px;
+    margin-right: 20px
+
+}
+
+/*small phone to small tablets: from 480px to 767px */
+@media screen and (max-width:767px ) {
+    footer {
+        font-size: 90%;
+    }
+    
+}
+
+
+
+
+/*small phone : from 0 to 480px */
+@media screen and (max-width:480px ) {
+
+}

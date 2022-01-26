@@ -1,0 +1,477 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: #fff;
+    color: rgb(20, 20, 20);
+    font-family:Arical,Helvetica,sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-rendering: optimizeLegibility;
+}
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+.row:before,
+.row:after {
+    content:"";
+    display:table;
+}
+.row:after {
+    clear:both;
+}
+.clearfix {zoom: 1;}
+.clearfix::after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+ header {
+     background-image: linear-gradient(rgb(0, 0, 0,0.7),rgb(0, 0, 0,0.7)),url(photos/food.jpg);
+     background-size: cover;
+     background-position: center;
+     height: 100vh;
+ }
+ .hero-text-box {
+     position: absolute;
+     width: 1140px;
+     top: 50% ;
+     left: 50%;
+     transform: translate(-50%,-50%);
+ }
+  h1 {
+      color: #fff;
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-size: 200%;
+      font-weight: 300%;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      word-spacing: 4px;
+  }
+  .btn:link,
+  .btn:visited,
+  input[type_sumit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.5s, border 0.5s, color 0.5s;
+  }
+  .btn-full {
+      background-color: rgb(250, 104, 7);
+      border: 1px solid rgb(250, 104, 7); ;
+      color : #fff;
+      margin-right: 15px;
+  }
+  .btn-ghost {
+    border: 1px solid rgb(250, 104, 7); 
+    color :rgb(250, 104, 7); 
+      
+  }
+  .btn:hover,
+  .btn:active,
+  input[type_sumit] {
+      background-color:rgb(250, 104, 7) ;
+      color: #000;
+  }
+ .logo-white{
+     height: 100px;
+     width: auto;
+     float: left;
+     margin-top: 20px;
+     margin-left: 12%;
+
+    }
+    .container-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+ .main-nav {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin-top: 40px;
+        width: 100%;
+     
+     }
+ .main-nav li {
+    margin: 0 20px;
+ }
+ .main-nav li a:link,
+ .main-nav li a:visited {
+     color: #fff;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-size: 90%;
+     border-bottom: 2px solid transparent;
+     transition: border-bottom 0.5s;
+ }
+ .main-nav li a:hover,
+ .main-nav li a:active {
+     border-bottom: 2px solid rgb(250, 104, 7)  ;
+ }
+
+ .p {
+
+     margin-left: 15%;
+    }
+ h3 {
+    color :rgb(250, 104, 7);
+    margin-bottom:5px;
+    margin-left: 15%;
+} 
+.span-1-of-4 {
+        width: 23.8%;
+        display:inline-block;
+	    float:left;
+        margin: 1% 0 1% 1%;
+        margin-bottom: 80px;
+}
+
+h2 {
+    font-size: 250%;
+    margin-top: 60px;
+    text-align: center;
+    
+}
+h2:after {
+    display: block;
+    height: 2px;
+    background-color:  rgb(250, 104, 7);
+    content: " ";
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.long-copy {
+    margin-bottom: 20px;
+    margin-left: 23%;
+    width: 60%;
+}
+.Section-Features .long-copy {
+    margin-bottom: 30px;
+    
+}
+
+
+/*------------------------------------------*/
+/* meal photo */
+/*------------------------------------------*/
+.section-meals {
+    margin-top: 40px;
+   padding: 0;
+}
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+.meals-showcase li {
+    display: block;
+    float:left;
+    width: 25%;
+}
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow:hidden ;
+    background-color: #000;
+
+}
+.meal-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height:auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s ;
+}
+.meal-photo img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+/*------------------------------------------*/
+/* work steps */
+/*------------------------------------------*/
+.steps-box {
+	display: block;
+	float:left;
+}
+
+
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 5%;
+    width: 49.2%;
+}
+.steps-box:last-child {
+    padding-left: 3%;
+    margin-top: 8%;
+    width: 49.2%;
+    margin-bottom: 5%;
+}
+.app-screen {
+    width: 30%;
+}
+.works-steps {
+    margin-bottom: 50px;
+}
+.works-steps:last-of-type {
+    margin-bottom: 100px;
+}
+.works-steps div {
+    color: rgb(250, 104, 7);
+    border:  2px solid rgb(250, 104, 7);
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    padding: 8px 5px 5px 5px;
+    text-align: center;
+    float: left;
+    margin-right: 25px;
+    font-size: 150%;
+}
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+.section-steps {
+    background-color: rgb(231, 230, 230);
+}
+
+/*------------------------------------------*/
+/* cities */
+/*------------------------------------------*/
+.box {
+    display:block;
+	float: left;
+    width: 18%; 
+    margin: 1%;
+    margin-top: 5%;
+    margin-left: 2%;
+}
+.box:first-child {
+
+    margin-left: 10%;
+}
+.box img {
+    height:auto;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.box h3 {
+    margin-left: 0;
+}
+.city-feature {
+    margin-bottom: 5px;
+
+}
+.city-feature a:link,
+.city-feature a:visited {
+    color: rgb(250, 104, 7);
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid rgb(250, 104, 7);
+    transition: border-bottom 0.5s, color 0.5s ;
+}
+.city-feature a:hover,
+.city-feature a:active {
+    color: rgb(192, 190, 190);
+    border-bottom: 1px solid rgb(231, 230, 230);
+}
+.section-Cities {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 40px;
+}
+/*------------------------------------------*/
+/* customers */
+/*------------------------------------------*/
+.section-Customer {
+    background-image: linear-gradient(rgb(0, 0, 0,0.7),rgb(0, 0, 0,0.7)), url(photos/back-customers.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    
+}
+blockquote {
+    padding: 2% 0;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+    width: 80%;
+    margin-bottom: 80px;
+
+}
+blockquote:first-child {
+    margin-left: 60%;
+}
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+cite img {
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.span-1-of-3 {
+    display: block;
+    float: left;
+    width: 25%; 
+}
+/*------------------------------------------*/
+/* sing up */
+/*------------------------------------------*/
+.section-plans {
+    background-color: rgb(231, 230, 230) ;
+    
+
+}
+.span-1-of-3-boxs {
+    display: block;
+    float: left;
+    width: 25.26%; 
+    margin-top: 40px;
+    margin-left: 3%;
+}
+.span-1-of-3-boxs:first-child {
+    margin-left: 10%;
+}
+.plans-box {
+    background-color: #fff;
+    border-radius: 5px;
+    border-bottom: 1px solid rgb(231, 230, 230);
+    margin-bottom: 60px;
+   
+}
+.plans-box h3 {
+ margin-left: 0;
+}
+.plans-box div {
+    padding: 15px;
+    border-bottom: 2px solid rgb(218, 218, 218);
+}
+
+.plan-price {
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+.plan-meals {
+    font-size: 80%;
+}
+.plans-box ul {
+    list-style: none;
+
+}
+.plans-box ul li {
+    padding: 5px 0;
+}
+.zo {
+    text-align: center;
+}
+/*------------------------------------------*/
+/* email */
+/*------------------------------------------*/
+
+.span-1-of-3- {
+    display: block;
+    float:left;
+    margin: 0 ;
+    width: 100%;
+}
+.span-2-of-3- {
+    display: block;
+    float:right;
+    margin: 0 ;
+    width: 62.26%;
+}
+.content-form {
+    width: 45%;
+    margin-left: 20%;
+
+
+}
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+}
+textarea {
+    height: 100px;
+}
+input [ type = checkedbox ] {
+    margin: 10px 5px 10px 0;
+}
+/*------------------------------------------*/
+/* footer */
+/*------------------------------------------*/
+footer {
+    background-color: rgb(29, 29, 29);
+    padding: 50px;
+    font-size: 90%;
+    height: 200px;
+    margin-top: 60px;
+}
+.footer-nav1 {
+    list-style: none;
+    float: left;
+}
+.footer-nav2 {
+    list-style: none;
+    float: right;
+}
+.footer-nav1 li,
+.footer-nav2 li {
+    display: inline-block;
+    margin-left: 20px;
+    color: white;
+    padding: 0 4px;
+}
+.footer-nav2 li {
+    margin-right: 30px;
+    
+}
+.footer-nav1 li a:link,
+.footer-nav1 li a:visited,
+.footer-nav2 li a:link,
+.footer-nav2  li a:visited {
+    text-decoration : none;
+    border: 0;
+    color: rgb(231, 230, 230);
+
+}
+.footer-nav1 li a:hover,
+.footer-nav1 li a:active,
+.footer-nav2 li a:hover,
+.footer-nav2  li a:active {
+    text-decoration : none;
+    border: 0;
+    color:  rgb(250, 104, 7);
+
+}
+.footer-p {
+    text-align: center;
+    margin-top: 60px;
+    color: white;
+}
